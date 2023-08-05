@@ -208,7 +208,7 @@ const uploadFiles =
         }
 
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", vditor.options.upload.url);
+        xhr.open("POST", vditor.options.upload.url(fileList));
         if (vditor.options.upload.token) {
             xhr.setRequestHeader("X-Upload-Token", vditor.options.upload.token);
         }

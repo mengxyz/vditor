@@ -345,7 +345,7 @@ interface IPreviewTheme {
 /** @link https://ld246.com/article/1549638745630#options-upload */
 interface IUpload {
     /** 上传 url */
-    url?: string;
+    url?(file: File[]): string;
     /** 上传文件最大 Byte */
     max?: number;
     /** 剪切板中包含图片地址时，使用此 url 重新上传 */
