@@ -128,7 +128,6 @@ export class Options {
             linkToImgUrl: "",
             max: 10 * 1024 * 1024,
             multiple: true,
-            url: "",
             withCredentials: false,
         },
         value: "",
